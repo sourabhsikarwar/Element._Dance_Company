@@ -10,8 +10,8 @@ html,body{
     width: 100%;
     color: #111;
     line-height: 1.6;
-
     font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
 :root{
     --primary-color: #2a2e3a;
@@ -60,12 +60,13 @@ img{
 /* Showcase */
 
 .showcase{
-    height: 650px;
+    height: 95vh;
     background-color: var(--primary-color);
     color: var(--light-color);
     position: relative;
     background: url('Img/main4.jpeg') no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .showcase h1{
     font-size: 45px;
@@ -139,10 +140,15 @@ img{
 /* About */
 
 .about{
-    background-color: var(--tar-color);
+    background-color: var(--ter-color);
+}
+
+.about::-webkit-scrollbar{
+    display: none;
 }
 .about p{
-    margin: 0 0 20px 0;
+    margin: 0 auto 20px auto;
+    width: 75%;
 }
 .about-text{
     text-align: center;
@@ -150,7 +156,7 @@ img{
 .about .grid{
     background-color:#e6e6e6;
     color: #111111;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 45%;
 }
 .about .logo{
     width: 30%;
@@ -195,7 +201,7 @@ img{
 /* styles page */
 
 .styles-page .grid{
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 45%;
 }
 .styles-page{
     background: #e6e6e6;
@@ -312,7 +318,7 @@ img{
 }
 
 .contact .grid{
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 45%;
 }
 
 
